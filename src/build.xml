@@ -1,1 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<project default = "compile">
+<property name="java" location="./src/Mypackage/"></property>
+<property name="test" location="./src/Mypackage/"></property>
+<property name="result" location="./target"></property>
+<property name="javaclasses" location="${result.dir}/classes"></property>
+<property name="testclasses" location="${result.dir}/testclasses"></property>
+<property name="jar" location="./MyProduct.jar"></property>
+
+<target name = "compile">
+<mkdir dir = "${javaclasses" />
+<javac srcdir = "${java}" destdir = "${javaclasses}" debug = "true" includeantruntime = "false"></javac>
+</target>
+<target name = "jar" depends = "compile">
+<jar desfile ="${jar}">
+<fileset dir = "${javaclasses}">
+</fileset>
+</jar>
+</target>
+</project>
