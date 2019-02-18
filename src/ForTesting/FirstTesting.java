@@ -1,4 +1,4 @@
-package Mypackage;
+package ForTesting;
 
 import static org.junit.Assert.*;
 
@@ -8,7 +8,10 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class FirstTest {
+import Mypackage.shoppingcart;
+
+public class FirstTesting {
+
 	@Test
 	public void test1() {
 		shoppingcart sc = new shoppingcart();
@@ -38,5 +41,6 @@ public class FirstTest {
 		assertTrue(2 == test.get_product_count());
 		assertTrue(227 == test.get_total_value());
 		}
+
 
 }
