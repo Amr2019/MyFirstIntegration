@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default = "compile">
 <property name="java" location="./src/Mypackage"></property>
+<property name="test" location="./src/ForTesting"></property>
 <property name="result" location="./target"></property>
 <property name="javaclasses" location="${result}/classes"></property>
 <property name="testclasses" location="${result}/testclasses"></property>
