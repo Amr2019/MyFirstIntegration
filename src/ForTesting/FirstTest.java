@@ -10,7 +10,7 @@ import org.junit.Test;
 
 import Mypackage.shoppingcart;
 
-public class FirstTesting {
+public class FirstTest {
 
 	@Test
 	public void test1() {
@@ -41,6 +41,5 @@ public class FirstTesting {
 		assertTrue(2 == test.get_product_count());
 		assertTrue(227 == test.get_total_value());
 		}
-
 
 }
